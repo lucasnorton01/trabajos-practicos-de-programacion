@@ -1,25 +1,27 @@
-/*public class Producto  {
+public class Producto2 {
     private String id;
     private String nombre;
     private double precio;
     private int cantidad;
-    private Categoriaproducto categoria;
+    private Categoriaproducto2 categoria;
 
-    public Producto(String id, String nombre, double precio, int cantidad) {
+    public Producto2() {
+    }
+
+    public Producto2(String id, String nombre, double precio, int cantidad) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
     }
 
-    public void mostrarProducto(){
-    System.out.println("ID: "+id);
-    System.out.println("Nombre: "+nombre);
-    System.out.println("Precio: "+precio);
-    System.out.println("Cantidad: "+cantidad);
-    System.out.println("Categoria: "+categoria);
-
-}
+    public Producto2(String id, String nombre, double precio, int cantidad, Categoriaproducto2 categoria) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.categoria = categoria;
+    }
 
     public String getId() {
         return id;
@@ -53,18 +55,21 @@
         this.cantidad = cantidad;
     }
 
-    public Categoriaproducto getCategoria() {
+    public Categoriaproducto2 getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(Categoriaproducto categoria) {
+    public void setCategoria(Categoriaproducto2 categoria) {
         this.categoria = categoria;
+    }
+    public void mostrar() {
+        System.out.println(" ID: " + id+ " Nombre: " + nombre + " Precio: " + precio + " Cantidad: " + cantidad);
 
     }
 
     @Override
     public String toString() {
-        return "Producto{" +
+        return "Producto2{" +
                 "id='" + id + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
@@ -74,4 +79,3 @@
     }
 }
 
- */
